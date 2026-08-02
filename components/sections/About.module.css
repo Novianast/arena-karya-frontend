@@ -1,0 +1,36 @@
+.about {
+  position: relative;
+  margin: 80px 0;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.aboutBgRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 53vw; /* Lebar sampai menutupi batas kanan layar */
+  background: #1A73E8;
+  z-index: 0;
+  /* Membuat sisi kiri miring, sisi kanan lurus sampai batas layar */
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.aboutLeft {
+  flex: 1;
+}
+
+.aboutRightText {
+  font-size: 16px;
+  flex: 1;
+  color: white;
+  padding-left: 60px; /* Memberi ruang antara teks dan bidang miring */
+}
+
+/* Styling font */
+.aboutRightText h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #f2f6ff;
+  --foreground: #171717;
+
+  --color-primary: #1A73E8;
+  --color-primary-hover: #1666c1;
+  --color-accent: #F4B400;
+  --color-accent-hover: #d89c00;
+  --color-default-white: #F4F4F4;
+  --color-default-gray: #777777;
+  --color-padded-white: #D8D7D7;
+  --color-arka-green: #00AC0B;
+  --color-arka-red: #FF2700;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-default-white: var(--color-default-white);
+  --color-default-gray: var(--color-default-gray);
+  --color-padded-white: var(--color-padded-white);
+  --color-arka-green: var(--color-arka-green);
+  --color-arka-red: var(--color-arka-red);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-plex: var(--font-plex);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-inter);
+}
+
+p {
+  font-family: var(--font-plex);
+}
